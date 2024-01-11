@@ -25,5 +25,32 @@ README is a file in the lecture1 directory and not a directory itself. Therefore
 
 The output is an error for the same reason as mentioned before - a file was used as an arguement and not a directory. 
 
+`ls`
+
+
+![Image](ls1.png)
+
+Working directory : lecture1
+
+The `ls` command lists all the files and folders in lecture 1. It doesn't display the files inside any folders, just the name of the folder. THe folder name is also in another format (blue colour in this instant) which makes it easily identifiable as not being a file. 
+
+This is not an error. 
+
+![Image](ls2.png)
+
+Working directory: lecture 1  
+
+This command listed the name of all the files in messages.  
+
+This output is not an error.
+
+![Image](ls3.png)
+
+Working directory: lecture1
+
+Using `ls` command with a file as the path outputs the path of the file name that is used as a relative path.
+
+The output is not an error. 
+
 
 
