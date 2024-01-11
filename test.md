@@ -8,4 +8,5 @@
 * Enjoy
 * Live
 
-![download](https://github.com/kiara-singh/cse15l-lab-reports/assets/155701488/b8c0fb17-7082-4109-a37a-288b2dea66dc)
+
+![download](https://github.com/Kiarasinghh/cse15l-lab-reports/assets/156370071/08fb0de6-21f0-4d0a-9637-a15e50e8c250)
