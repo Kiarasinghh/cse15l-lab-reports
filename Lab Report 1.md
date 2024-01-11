@@ -32,13 +32,13 @@ The output is an error because a file was used as an arguement and not a directo
 
 Working directory : `lecture1`
 
-The `ls` command lists all the files and folders in `lecture 1`. It doesn't display the files inside any folders, just the name of the folder. The folder name is also in another format (blue colour in this instant) which makes it easily identifiable as not being a file. 
+The `ls` command lists all the files and folders in `lecture1`. It doesn't display the files inside any folders, just the name of the folder. The folder name is also in another format (blue colour in this instant) which makes it easily identifiable as not being a file. 
 
 This is not an error. 
 
 ![Image](ls2.png)
 
-Working directory: `lecture 1`  
+Working directory: `lecture1`  
 
 This command listed the name of all the files in messages.  
 
