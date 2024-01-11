@@ -53,4 +53,29 @@ Using `ls` command with a file as the path outputs the path of the file name tha
 The output is not an error. 
 
 
+`cat`
 
+
+![Image](cat1.png)
+
+Working directory : home
+
+When there is no path, the `cat` command prompts for user input and outputs the input. It continues to ask for user input until ctrl+c is clicked to exit this. 
+
+This is not an error. 
+
+![Image](cat2.png)
+
+Working directory: home 
+
+The output is a message saying that lecture1 is not a directory since `cat` is used to concatonate text. 
+
+This output produces an error since a directory is used as the path and not a file that can be concatonated. 
+
+![Image](cat3.png)
+
+Working directory: lecture1
+
+The `cat` command concatonated the text in the Hello.java file and displayed it all together. 
+
+The output is not an error. 
