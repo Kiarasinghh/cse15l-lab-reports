@@ -13,7 +13,7 @@ This is not an error as simply nothing happens.
 
 Working directory: home 
 
-This command moved the prompt into the lecture1 directory which can be seen with lecture1 being written after the "~/". 
+This command moved the prompt into the lecture1 directory which can be seen with lecture1 being written after the "~/". This happens since lecture1 is a directory in home. 
 
 This output is not an error as the `cd` command was used correctly. 
 
