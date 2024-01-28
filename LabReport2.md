@@ -7,7 +7,7 @@ For this example, the main method was called and the value of `args[0]` was 3822
 - The `String query` variable is set to  `/add-message?s=Hello&user=Kiara`.
 - Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `{"s","hello&user","Kiara"}`.
 - The value of `v2` is `v1[1]` split at the `&` which results to `{"hello","user"}.
-- '"Kiara"` is added to lines and then `"Hello"` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
+- 'Kiara` is added to lines and then `Hello` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
 - The for loop is exectued from `i=0` to i`<lines.size` which is currently 2. 
 - The value of `String user` is `Kiara` (at index 0 of `lines`) and the value of `String message` is `Hello` (at index 1 of `lines`)
 - After this the for loop ends as `i` get incremented by 2 and is no longer less than 2. 
