@@ -1,4 +1,4 @@
-<img width="538" alt="image" src="https://github.com/Kiarasinghh/cse15l-lab-reports/assets/156370071/b57d6626-51c2-41fd-ae49-9177f66f6933"># Part 1 :
+# Part 1 :
 
 ## Code for ChatServer 
 ```
