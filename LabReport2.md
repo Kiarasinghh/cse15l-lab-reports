@@ -1,6 +1,5 @@
 Part 1 :
-
-# code block
+```
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList; 
@@ -41,6 +40,7 @@ class ChatServer {
         Server.start(port, new Handler());
     }
 }
+```
 
 Examples 1: 
 
