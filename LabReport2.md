@@ -73,7 +73,7 @@ In example 2, the value of `url`, `v1`, and `v2` changed but as the ArrayList li
 
 Absolute path to the private key for my SSH key for logging into ieng6: 
 
-![Image](ssh1.png) 
+![Image](.ssh1.png) 
 
 Absolute path to the public key for my SSH key for logging into ieng6:
 
