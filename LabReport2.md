@@ -1,4 +1,44 @@
 Part 1 :
+`import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList; 
+
+class Handler implements URLHandler {
+  ArrayList<String> lines = new ArrayList<String>();
+
+  public String handleRequest(URI url){
+    String query = url.getQuery();
+    if(url.getPath().equals("/add-message")) {
+      if(query.startsWith("s=")) { //s=add-message?s=message&user=name
+        String[] v1 = query.split("="); //{s,message&user,name}
+        String[] v2=v1[1].split("&"); //{message,user}
+        lines.add(v1[2]+": ");
+        lines.add(v2[0]);
+        lines.add("\n");
+        return String.join("",lines);
+      }
+      else {
+        return "/add-message requires a query parameter s\n";
+      }
+    }
+    else {
+      return String.join("\n", lines) + "\n"; //prints what is in lines
+    }
+  }
+}`
+
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
 
 Examples 1: 
 
