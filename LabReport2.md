@@ -71,17 +71,18 @@ In example 2, the value of `url`, `v1`, and `v2` changed but as the ArrayList li
 
 # Part 2: 
 
-Absolute path to the private key for my SSH key for logging into ieng6: 
+**Absolute path to the private key for my SSH key for logging into ieng6:**
 
 ![Image](.ssh1.png) 
 
-Absolute path to the public key for my SSH key for logging into ieng6:
+**Absolute path to the public key for my SSH key for logging into ieng6:**
 
 
-Terminal interaction where I log into my ieng6 account without being asked for a password: 
+**Terminal interaction where I log into my ieng6 account without being asked for a password:**
+
 ![Image](withoutpassword.png) 
 
-Part 3: 
+# Part 3: 
 talk about learning about creating a server and remotley connecting to ieng6
 
 
