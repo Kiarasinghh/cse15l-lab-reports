@@ -66,6 +66,8 @@ Now, The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1
 - "\n" is also added to lines after the user and message which signifies a new line. 
 - `String.join` concatenates all the elements in lines resulting to the output in the photo above. Since there is a "\n" in the ArrayList after each user and message combination, they all get printed in their own line.
 
+In example 2, the value of `url`, `v1`, and `v2` changed but as the ArrayList lines was not intialised again, it still stored the values from example 1. 
+
 
 # Part 2: 
 
