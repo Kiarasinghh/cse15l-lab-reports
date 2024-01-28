@@ -1,4 +1,4 @@
-# Part 1 :
+<img width="538" alt="image" src="https://github.com/Kiarasinghh/cse15l-lab-reports/assets/156370071/b57d6626-51c2-41fd-ae49-9177f66f6933"># Part 1 :
 
 ## Code for ChatServer 
 ```
@@ -79,6 +79,7 @@ Absolute path to the public key for my SSH key for logging into ieng6:
 
 
 Terminal interaction where I log into my ieng6 account without being asked for a password: 
+![Image](withoutpassword.png) 
 
 Part 3: 
 talk about learning about creating a server and remotley connecting to ieng6
