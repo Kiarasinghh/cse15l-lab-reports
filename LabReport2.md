@@ -1,5 +1,7 @@
 Part 1 :
-`import java.io.IOException;
+
+# code block
+import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList; 
 
@@ -25,7 +27,7 @@ class Handler implements URLHandler {
       return String.join("\n", lines) + "\n"; //prints what is in lines
     }
   }
-}`
+}
 
 class ChatServer {
     public static void main(String[] args) throws IOException {
