@@ -1,6 +1,6 @@
-Part 1 :
+# Part 1 :
 
-Code for ChatServer 
+## Code for ChatServer 
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -44,21 +44,30 @@ class ChatServer {
 }
 ```
 
-Examples 1: 
+## Example 1: 
 
 ![Image](message1.png) 
 For this example, the main method was called and the value of `args[0]` was 7842 which was saved as the port number. Then the Server method was called with this port number and the handler I wrote in ChatServer.java. In the handler class I have ArrayList of Strings called lines which gets intialised to being empty each time the server method runs. After this: 
 - The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1dr548jv8jatuoka0pck.us.edusercontent.com/add-message?s=Hello&user=Kiara` as the value of `URL url`.
 - The `String query` variable is set to  `/add-message?s=Hello&user=Kiara`.
-- Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `{"s","hello&user","Kiara"}`.
-- The value of `v2` is `v1[1]` split at the `&` which results to `{"hello","user"}.
+- Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `"s","hello&user","Kiara"`.
+- The value of `v2` is `v1[1]` split at the `&` which results to `"hello","user"`.
 - `Kiara: ` is added to lines and then `Hello` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
 - "\n" is also added to lines after the user and message which signifies a new line. 
 - `String.join` concatenates all the elements in lines resulting to the output in the photo above.
 
-Example 2: 
+## Example 2: 
+![Image](message2.png) 
+Now, The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1dr548jv8jatuoka0pck.us.edusercontent.com/add-message?s=What%20a%20nice%20day&user=Aadya)` as the value of `URL url`.
+- The `String query` variable is set to  `/add-message?s=What%20a%20nice%20day&user=Aadya.
+- Since the path starts with `/add-message` and the query starts with `s=` the value of v1 is now the query split at `=` resulting to `"s","What%20a%20nice%20day&user","Aadya"`.
+- The value of `v2` is now `v1[1]` split at the `&` which results to `"What%20a%20nice%20day&user","user"`.
+- `Aadya: ` is now added to lines and then `What%20a%20nice%20day&user` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
+- "\n" is also added to lines after the user and message which signifies a new line. 
+- `String.join` concatenates all the elements in lines resulting to the output in the photo above. Since there is a "\n" in the ArrayList after each user and message combination, they all get printed in their own line.
 
-Part 2: 
+
+# Part 2: 
 
 Absolute path to the private key for my SSH key for logging into ieng6: 
 
