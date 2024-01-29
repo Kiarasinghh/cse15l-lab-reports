@@ -73,17 +73,22 @@ In example 2, the value of `url`, `v1`, and `v2` changed but as the ArrayList li
 
 **Absolute path to the private key for my SSH key for logging into ieng6:**
 
+Absolute Path:
+
 ![Image](.ssh1.png) 
 
 **Absolute path to the public key for my SSH key for logging into ieng6:**
 
+Abosute Path:
+
+![Image](ieng6.png) 
 
 **Terminal interaction where I log into my ieng6 account without being asked for a password:**
 
 ![Image](withoutpassword.png) 
 
 # Part 3: 
-talk about learning about creating a server and remotley connecting to ieng6
+Something new I have learned in the past labs and week is how to remotley connect to a server from my own laptop and launch my own server. It was incredibly intresting to me that a server I created could be accessed by my peers and changes to variables in the code would get reflected on both our screens. Additionally, I knew some basics about public and private keys but generating my own to aid in logging in was something I had never done before. In general - a lot of new and usefull skills were gained this week and I look forward to adding to my toolbox. 
 
 
 
