@@ -38,7 +38,7 @@ public void testReverseInPlace() {
 ``
 The output for the above code should have been 5,4,3 but it ws 5,4,5
 
-<img width="899" alt="image" src="https://github.com/Kiarasinghh/cse15l-lab-reports/assets/156370071/c7733520-2cf7-4137-b317-83f8666144b7">
+![Image](3,4,5.png) 
 
 
 # Succesfull input:
@@ -50,4 +50,4 @@ The output for the above code should have been 5,4,3 but it ws 5,4,5
     assertArrayEquals(new int[]{3,3}, input1);
 	}
  ``
- 
+ ![Image](3,3.png) 
