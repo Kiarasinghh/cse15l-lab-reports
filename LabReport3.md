@@ -2,6 +2,7 @@
 
 # Bugged Program:
 
+```
 Before:
 
  static int[] reversed(int[] arr) {
@@ -11,7 +12,7 @@ Before:
     }
     return arr;
   }
-
+```
 
 After: 
 ```
@@ -26,28 +27,28 @@ After:
 The bug was that by the time we got to the last element, changing it to the first one meant not actually changing it’s value. This is because the first element = last element. By only going up to half the length of the array, this issue is avoided as once we get to the middle, all the elements have already been reversed. When there is a odd number of elements in the lis, the element in the middle index wouldn't change in this code, which works with what the function is trying to do. 
 
 # Faliure inducing input:
-``
+```
 @Test 
 public void testReverseInPlace() {
   int[] input1 = {3,4,5};
   ArrayExamples.reverseInPlace(input1);
   assertArrayEquals(new int[]{5,4,3}, input1);
 	}
-``
+```
 The output for the above code should have been 5,4,3 but it ws 5,4,5
 
 ![Image](345.png) 
 
 
 # Succesfull input:
-``
+```
 	@Test 
 	public void testReverseInPlace() {
     int[] input1 = {3,3};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{3,3}, input1);
 	}
- ``
+ ```
  ![Image](3,3.png) 
 
 # Part 2 
@@ -56,7 +57,7 @@ Chosen command: GREP
 
 ## Option 1: -i (case insensitive search)
 Example 1:
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/government/media (main)
  	$ grep -1 "legal" 5_Legal_Groups.txt 
 	
@@ -74,10 +75,10 @@ Example 1:
 	Christenson, pointed out that the shared facility will also be
 	efficient for those needing legal services. No longer will a woman
 	desperate for a protective order, for example, have to run all over
-``
+```
 Example 2: 
 
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical (main)
  	$ grep -r -i "doctor"  biomed
 	biomed/1471-2156-4-10.txt:        Cynthia Coffman is the post-doctoral associate who
@@ -118,11 +119,11 @@ Example 2:
 	biomed/1472-6963-3-14.txt:            effect when none exists. A doctor who knows that the
 	biomed/1478-7954-1-3.txt:        doctors [ 28 ] . An important aspect in the analyzing the
 
-``
+```
 ## Option 2: -c (count occurences of match)
 
 Example 1:
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical (main) 
  	$ grep -r -c "danger" 911report
 	911report/chapter-1.txt:3
@@ -142,18 +143,18 @@ Example 1:
 	911report/chapter-8.txt:7
 	911report/chapter-9.txt:8
 	911report/preface.txt:1
-``
+```
 
 Example 2: 
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/biomed (main)
 	$ grep -c "adult" 1468-6708-3-1.txt
 	20
-``
+```
 ## Option 3: -C (display surrounding lines with context)
 
 Example 1: 
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/biomed (main)
 	$ grep -n "lipid" 1468-6708-3-3.txt
 	19:        these trials did not assess the effect of lipid-lowering
@@ -171,10 +172,10 @@ Example 1:
 	220:        lipid-lowering therapy from patients who present with an
 	251:        aggressive vs. earlier lipid lowering therapy.
 	263:        less aggressive lipid-lowering in
-``
+```
 
 Example 2:
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/plos (main)
 	$ grep  -n "cell" journal.pbio.0020043.txt
 	6:        I am a clone. That is, I am a colony of cells that developed from a single fertilized
@@ -207,24 +208,24 @@ Example 2:
 	123:          potentially fertile “sibling” cell lineage (the rest of the scale insect)—though, of
 	124:          course, polar body-derived cells are “sibling” in a strange special sense. Like ants and
 	137:          and Grbic 1997), in which cells derived from polar bodies form a membrane around the
-``
+```
 
 ## Option 4: -l (lists files with )
 
 Example 1: 
 
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/government/Alcohol_Problems (main)
 	$ grep -l "drinking" *
 	DraftRecom-PDF.txt
 	Session2-PDF.txt
 	Session3-PDF.txt
 	Session4-PDF.txt
-``
+```
 
 Example 2: 
 
-``
+```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/plos (main)
 	$ grep -1 "danger" *
 	journal.pbio.0020047.txt-        approximately 1%, and only a tiny proportion of that 1% are writers), and that
@@ -314,4 +315,4 @@ Example 2:
 	pmed.0020278.txt:        leads and dangerous vaccines produced during polio research (verified by Albert Sabin,
 	pmed.0020278.txt-        himself); the failure of primate studies to improve risks for birth defects and premature
 
-``
+```
