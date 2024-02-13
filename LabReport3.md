@@ -25,7 +25,7 @@ After:
 ```
 The bug was that by the time we got to the last element, changing it to the first one meant not actually changing it’s value. This is because the first element = last element. By only going up to half the length of the array, this issue is avoided as once we get to the middle, all the elements have already been reversed. When there is a odd number of elements in the lis, the element in the middle index wouldn't change in this code, which works with what the function is trying to do. 
 
-# Faliure inducing input:
+# Faliure Inducing Input:
 ```
 @Test 
 public void testReverseInPlace() {
@@ -39,7 +39,7 @@ The output for the above code should have been 5,4,3 but it ws 5,4,5
 ![Image](345.png) 
 
 
-# Succesfull input:
+# Succesfull Input:
 ```
 @Test 
 public void testReverseInPlace() {
@@ -331,5 +331,6 @@ Example 2:
 ```
 This code recursivley searches the ``plos`` directory for the word danger. the `*` indicates to search all the files in the current directory. This is helpful if you know the directory of a certain file but are unsure which specific file has it. Having the context around the word also help in knowing if this is the right file as having the world alone can be confusing. 
 
-Source Used for all examples: 
+Source used for all examples: 
+
 [https://www.youtube.com/watch?v=etez41x3w5E ](url) 
