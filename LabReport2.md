@@ -15,10 +15,14 @@ class Handler implements URLHandler {
       if(query.startsWith("s=")) { //s=add-message?s=message&user=name
         String[] v1 = query.split("="); //{s,message&user,name}
         String[] v2=v1[1].split("&"); //{message,user}
-        lines.add(v1[2]+": ");
-        lines.add(v2[0]);
-        lines.add("\n");
-        return String.join("",lines);
+        if(v2[1].equals("user") && v1[0].equals("s")){
+          lines.add(v1[2]+": ");
+          lines.add(v2[0]);
+          lines.add("\n");
+          return String.join("",lines);
+        }else{
+          return "invalid query";
+        }
       }
       else {
         return "/add-message requires a query parameter s\n";
@@ -52,6 +56,7 @@ For this example, the main method was called and the value of `args[0]` was 7842
 - The `String query` variable is set to  `/add-message?s=Hello&user=Kiara`.
 - Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `"s","hello&user","Kiara"`.
 - The value of `v2` is `v1[1]` split at the `&` which results to `"hello","user"`.
+- If the query was correct then `v2[1]` should be "user" and `v1[0]` should be `"s"` so this is checked before the next steps. If this is not true, then a inavlid query message is returned. In this case it is true so we proceed. 
 - `Kiara: ` is added to `lines` and then `Hello` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
 - "\n" is also added to `lines` after the user and message which signifies a new line. 
 - `String.join` concatenates all the elements in `lines` resulting to the output in the photo above.
@@ -62,6 +67,7 @@ Now, The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1
 - The `String query` variable is set to  `/add-message?s=What%20a%20nice%20day&user=Aadya.
 - Since the path starts with `/add-message` and the query starts with `s=` the value of `v1` is now the query split at `=` resulting to `"s","What%20a%20nice%20day&user","Aadya"`.
 - The value of `v2` is now `v1[1]` split at the `&` which results to `"What%20a%20nice%20day&user","user"`.
+- `v2[1]` is "user" and `v1[0]` is `"s"` so we proceed.
 - `Aadya: ` is now added to `lines` and then `What%20a%20nice%20day&user` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
 - "\n" is also added to `lines` after the user and message which signifies a new line. 
 - `String.join` concatenates all the elements in `lines` resulting to the output in the photo above. Since there is a "\n" in the ArrayList after each user and message combination, they all get printed in their own line.
