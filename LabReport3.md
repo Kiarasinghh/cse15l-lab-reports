@@ -1,8 +1,5 @@
 ## Part 1
 
-
-
-
 # Bugged Program:
 
 Before:
@@ -51,3 +48,11 @@ The output for the above code should have been 5,4,3 but it ws 5,4,5
 	}
  ``
  ![Image](3,3.png) 
+
+## Part 2 
+
+Chosen command: find 
+
+# Option 1: 
+
+
