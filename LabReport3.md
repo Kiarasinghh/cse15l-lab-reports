@@ -48,7 +48,7 @@ public void testReverseInPlace() {
   assertArrayEquals(new int[]{3,3}, input1);
 }
  ```
- ![Image](3,3.png) 
+ ![Image](successtest.png) 
 
  Althought the code is wrong, since the list reversed is the same as the orginal list and the first element can equal the last element, this input produces a "succesfull" output. 
 
