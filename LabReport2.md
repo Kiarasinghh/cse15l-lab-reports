@@ -47,7 +47,7 @@ class ChatServer {
 ## Example 1: 
 
 ![Image](message1.png) 
-For this example, the main method was called and the value of `args[0]` was 7842 which was saved as the `port number`. Then the `Server` method was called with this `port number` and the `handler` I wrote in `ChatServer.java`. In the handler class I have ArrayList of Strings called `lines` which is a class in `handler` and gets intialised to being empty each time the server method runs. After this: 
+For this example, the main method was called and the value of `args[0]` was 7842 which was saved as the `port number`. Then the `Server` method was called with this `port number` and the `Handler` I wrote in `ChatServer.java`. In the `Handler` class I have ArrayList of Strings called `lines` which is a field in the class `Handler` and gets intialised to being empty each time the server method runs. After this: 
 - The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1dr548jv8jatuoka0pck.us.edusercontent.com/add-message?s=Hello&user=Kiara` as the value of `URL url`.
 - The `String query` variable is set to  `/add-message?s=Hello&user=Kiara`.
 - Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `"s","hello&user","Kiara"`.
