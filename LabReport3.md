@@ -52,7 +52,7 @@ public void testReverseInPlace() {
 
 # Part 2 
 
-Chosen command: GREP
+Chosen command: **GREP** 
 
 ## Option 1: -i (case insensitive search)
 Example 1:
@@ -75,6 +75,8 @@ Example 1:
 	efficient for those needing legal services. No longer will a woman
 	desperate for a protective order, for example, have to run all over
 ```
+This code searches for the word "legal" including "Legal" "LEGAL" and any other spellings as it is not case sensitive in the 5_Legal_Groups.txt file. 
+
 Example 2: 
 
 ```
@@ -119,6 +121,9 @@ Example 2:
 	biomed/1478-7954-1-3.txt:        doctors [ 28 ] . An important aspect in the analyzing the
 
 ```
+
+This code recursivley searches the biomed direcotry for ny files with the word doctor (not case sensitive). 
+
 ## Option 2: -c (count occurences of match)
 
 Example 1:
@@ -143,6 +148,7 @@ Example 1:
 	911report/chapter-9.txt:8
 	911report/preface.txt:1
 ```
+This code recursivley visits each file in the ``911report`` directory and counts how many times the word "danger" appears in it and displays the answer.  
 
 Example 2: 
 ```
@@ -150,6 +156,9 @@ Example 2:
 	$ grep -c "adult" 1468-6708-3-1.txt
 	20
 ```
+
+This code calculated how many times the word "adult" appeared in the files ``1468-6708-3-1.txt``.
+
 ## Option 3: -C (display surrounding lines with context)
 
 Example 1: 
@@ -172,6 +181,7 @@ Example 1:
 	251:        aggressive vs. earlier lipid lowering therapy.
 	263:        less aggressive lipid-lowering in
 ```
+This code prints every line and line number in the ``1468-6708-3-3.txt`` file that contains the word "lipid" as well as the sentence it appears in. 
 
 Example 2:
 ```
@@ -208,6 +218,7 @@ Example 2:
 	124:          course, polar body-derived cells are “sibling” in a strange special sense. Like ants and
 	137:          and Grbic 1997), in which cells derived from polar bodies form a membrane around the
 ```
+This code searches the ``journal.pbio.0020043.txt`` file for the word "cell" and prints the words surrounding it along with their line number. 
 
 ## Option 4: -l (lists files with )
 
@@ -221,7 +232,7 @@ Example 1:
 	Session3-PDF.txt
 	Session4-PDF.txt
 ```
-
+This code returns the files in the Alchol_Probelems directory with the word drinking. This can be helpful if you're in a large databse of source code and are trying to find the code for a specific 
 Example 2: 
 
 ```
