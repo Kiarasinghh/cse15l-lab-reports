@@ -4,17 +4,17 @@
 
 Before:
 
-``static int[] reversed(int[] arr) {
+ static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
-  }``
+  }
 
 
 After: 
-``
+```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
       int temp = arr[i];
@@ -22,7 +22,7 @@ After:
       arr[arr.length-i-1]=temp;
     }
   }
-``
+```
 The bug was that by the time we got to the last element, changing it to the first one meant not actually changing it’s value. This is because the first element = last element. By only going up to half the length of the array, this issue is avoided as once we get to the middle, all the elements have already been reversed. When there is a odd number of elements in the lis, the element in the middle index wouldn't change in this code, which works with what the function is trying to do. 
 
 # Faliure inducing input:
