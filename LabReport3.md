@@ -50,6 +50,8 @@ public void testReverseInPlace() {
  ```
  ![Image](3,3.png) 
 
+ Althought the code is wrong, since the list reversed is the same as the orginal list and the first element can equal the last element, this input produces a "succesfull" output. 
+
 # Part 2 
 
 Chosen command: **GREP** 
