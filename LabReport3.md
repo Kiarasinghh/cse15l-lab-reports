@@ -232,7 +232,8 @@ Example 1:
 	Session3-PDF.txt
 	Session4-PDF.txt
 ```
-This code returns the files in the Alchol_Probelems directory with the word drinking. This can be helpful if you're in a large databse of source code and are trying to find the code for a specific 
+This code returns the files in the Alchol_Probelems directory with the word drinking. This can be helpful if you're in a large databse of source code and are trying to find the code for a specific function.
+
 Example 2: 
 
 ```
@@ -326,3 +327,7 @@ Example 2:
 	pmed.0020278.txt-        himself); the failure of primate studies to improve risks for birth defects and premature
 
 ```
+This code recursivley searches the ``plos`` directory for the word danger. the `*` indicates to search all the files in the current directory. This is helpful if you know the directory of a certain file but are unsure which specific file has it. Having the context around the word also help in knowing if this is the right file as having the world alone can be confusing. 
+
+Source Used for all examples: 
+[https://www.youtube.com/watch?v=etez41x3w5E ](url) 
