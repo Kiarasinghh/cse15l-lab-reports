@@ -32,7 +32,7 @@ public void testReverseInPlace() {
   int[] input1 = {3,4,5};
   ArrayExamples.reverseInPlace(input1);
   assertArrayEquals(new int[]{5,4,3}, input1);
-	}
+}
 ```
 The output for the above code should have been 5,4,3 but it ws 5,4,5
 
@@ -41,12 +41,12 @@ The output for the above code should have been 5,4,3 but it ws 5,4,5
 
 # Succesfull input:
 ```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = {3,3};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{3,3}, input1);
-	}
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = {3,3};
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{3,3}, input1);
+}
  ```
  ![Image](3,3.png) 
 
