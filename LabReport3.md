@@ -57,6 +57,8 @@ public void testReverseInPlace() {
 Chosen command: **GREP** 
 
 ## Option 1: -i (case insensitive search)
+Source: [https://www.youtube.com/watch?v=etez41x3w5E ](url) 
+
 Example 1:
 ```
 	singh@DESKTOP-VA584UV MINGW64 ~/docsearch/technical/government/media (main)
@@ -127,6 +129,8 @@ Example 2:
 This code recursivley searches the biomed direcotry for ny files with the word doctor (not case sensitive). 
 
 ## Option 2: -c (count occurences of match)
+Source: [https://www.youtube.com/watch?v=etez41x3w5E ](url) 
+
 
 Example 1:
 ```
@@ -162,6 +166,8 @@ Example 2:
 This code calculated how many times the word "adult" appeared in the files ``1468-6708-3-1.txt``.
 
 ## Option 3: -C (display surrounding lines with context)
+Source: [https://www.youtube.com/watch?v=etez41x3w5E ](url) 
+
 
 Example 1: 
 ```
@@ -223,6 +229,7 @@ Example 2:
 This code searches the ``journal.pbio.0020043.txt`` file for the word "cell" and prints the words surrounding it along with their line number. 
 
 ## Option 4: -l (lists files with )
+Source: [https://www.youtube.com/watch?v=etez41x3w5E ](url) 
 
 Example 1: 
 
@@ -331,6 +338,6 @@ Example 2:
 ```
 This code recursivley searches the ``plos`` directory for the word danger. the `*` indicates to search all the files in the current directory. This is helpful if you know the directory of a certain file but are unsure which specific file has it. Having the context around the word also help in knowing if this is the right file as having the world alone can be confusing. 
 
-Source used for all examples: 
 
-[https://www.youtube.com/watch?v=etez41x3w5E ](url) 
+
+
