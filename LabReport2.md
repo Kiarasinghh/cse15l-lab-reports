@@ -54,7 +54,7 @@ class ChatServer {
 For this example, the main method was called and the value of `args[0]` was 7842 which was saved as the `port number`. Then the `Server` method was called with this `port number` and the `Handler` I wrote in `ChatServer.java`. In the `Handler` class I have ArrayList of Strings called `lines` which is a field in the class `Handler` and gets intialised to being empty each time the server method runs. After this: 
 - The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1dr548jv8jatuoka0pck.us.edusercontent.com/add-message?s=Hello&user=Kiara` as the value of `URL url`.
 - The `String query` variable is set to  `/add-message?s=Hello&user=Kiara`.
-- Since the path starts with  `/add-message` and the query starts with `s=` the value of v1 is the query split at `=` resulting to `"s","hello&user","Kiara"`.
+- Since the path starts with  `/add-message` and the query starts with `s=` the value of 'v1' is the query split at `=` resulting to `"s","hello&user","Kiara"`.
 - The value of `v2` is `v1[1]` split at the `&` which results to `"hello","user"`.
 - If the query was correct then `v2[1]` should be "user" and `v1[0]` should be `"s"` so this is checked before the next steps. If this is not true, then a inavlid query message is returned. In this case it is true so we proceed. 
 - `Kiara: ` is added to `lines` and then `Hello` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
