@@ -25,7 +25,7 @@ After:
 ```
 The bug was that by the time we got to the last element, changing it to the first one meant not actually changing it’s value. This is because the first element = last element. By only going up to half the length of the array, this issue is avoided as once we get to the middle, all the elements have already been reversed. When there is a odd number of elements in the lis, the element in the middle index wouldn't change in this code, which works with what the function is trying to do. 
 
-# Faliure Inducing Input:
+# Failure Inducing Input:
 ```
 @Test 
 public void testReverseInPlace() {
@@ -39,7 +39,7 @@ The output for the above code should have been 5,4,3 but it ws 5,4,5
 ![Image](345.png) 
 
 
-# Succesfull Input:
+# Successful Input:
 ```
 @Test 
 public void testReverseInPlace() {
@@ -50,7 +50,7 @@ public void testReverseInPlace() {
  ```
  ![Image](successtest.png) 
 
- Althought the code is wrong, since the list reversed is the same as the orginal list and the first element can equal the last element, this input produces a "succesfull" output. 
+ Althought the code is wrong, since the list reversed is the same as the orginal list and the first element can equal the last element, this input produces a "successful" output. 
 
 # Part 2 
 
