@@ -70,7 +70,7 @@ Now, The `handleRequest` function is then ran with `https://0-0-0-0-7842-38r14p1
 - `v2[1]` is "user" and `v1[0]` is `"s"` so we proceed.
 - `Aadya: ` is now added to `lines` and then `What%20a%20nice%20day&user` is added to `lines` as they are `v1[2]` and `v2[0]` respectively.
 - "\n" is also added to `lines` after the user and message which signifies a new line. 
-- `String.join` concatenates all the elements in `lines` resulting to the output in the photo above. Since there is a "\n" in the ArrayList after each user and message combination, they all get printed in their own line.
+- `String.join` concatenates all the elements in `lines` resulting to the output in the photo above. Since there is a `\n` in the ArrayList after each user and message combination, they all get printed in their own line.
 
 In example 2, the value of `url`, `v1`, and `v2` changed but as the ArrayList `lines` was not intialised again, it still stored the values from example 1. 
 
