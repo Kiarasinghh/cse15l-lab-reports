@@ -36,7 +36,7 @@ public void testReverseInPlace() {
 ```
 The output for the above code should have been 5,4,3 but it ws 5,4,5
 
-![Image](345.png) 
+![Image](newtest.png) 
 
 
 # Successful Input:
